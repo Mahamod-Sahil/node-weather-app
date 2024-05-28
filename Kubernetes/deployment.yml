@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: netflix-app
+  name: weather-app
   labels:
-    app: netflix-app
+    app: weather-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: netflix-app
+      app: weather-app
   template:
     metadata:
       labels:
-        app: netflix-app
+        app: weather-app
     spec:
       containers:
-      - name: netflix-app
-        image: sevenajay/netflix:latest
+      - name: weatger-app
+        image: mdsahil345/weather-app:latest
         ports:
-        - containerPort: 80
+        - containerPort: 3000
