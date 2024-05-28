@@ -20,4 +20,4 @@ ENV NODE_ENV=production
 EXPOSE 8000
 
 # Command to run the application
-CMD ["node", "index.js"]
+CMD ["node", "/src/app.js"]
